@@ -1,0 +1,17 @@
+/* Efek geser halus saat menu navigasi diklik */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animasi garis kedip-kedip (kursor) di efek mengetik */
+#animasi-teks {
+  border-right: 2px solid #2563eb;
+  padding-right: 4px;
+  animation: kedip 0.7s infinite step-end;
+}
+
+@keyframes kedip {
+  50% {
+    border-color: transparent;
+  }
+}

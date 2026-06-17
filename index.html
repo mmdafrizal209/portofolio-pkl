@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio PKL - M. Afrizal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 font-sans">
+    <header
+      class="sticky top-0 z-50 bg-white border-b border-slate-200 py-4 shadow-sm"
+    >
+      <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
+        <span class="text-xl font-bold text-blue-600">Portofolio.</span>
+        <nav class="space-x-4 font-medium text-sm text-slate-600">
+          <a href="#about" class="hover:text-blue-600">Tentang</a>
+          <a href="#skills" class="hover:text-blue-600">Keahlian</a>
+          <a href="#contact" class="hover:text-blue-600">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-20">
+      <section
+        id="hero"
+        class="flex flex-col md:flex-row items-center justify-between gap-8 py-8"
+      >
+        <div class="space-y-4 text-center md:text-left flex-1">
+          <span
+            class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+            >Peserta PKL RPL</span
+          >
+          <h1 class="text-4xl font-extrabold text-slate-900">
+            Halo, Saya M. Afrizal
+          </h1>
+
+          <p class="text-lg text-slate-600">
+            Saya seorang
+            <span id="animasi-teks" class="text-blue-600 font-bold"></span>
+          </p>
+
+          <div class="pt-2">
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition inline-block"
+            >
+              Hubungi Saya
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-48 h-48 rounded-full overflow-hidden shadow-lg bg-slate-300 border-4 border-white flex-shrink-0"
+        >
+          <img
+            src="assets/images/profile.jpg"
+            alt="Foto M. Afrizal"
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80'"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="border-t border-slate-200 pt-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Tentang Saya</h2>
+        <p class="text-slate-600 leading-relaxed text-base">
+          Saya adalah siswa SMK jurusan
+          <strong>Rekayasa Perangkat Lunak (RPL)</strong> yang fokus pada
+          pengembangan aplikasi web dan mobile. Melalui kegiatan PKL ini, saya
+          ingin mempraktikkan keterampilan coding saya dalam project nyata dan
+          belajar langsung dari mentor di industri.
+        </p>
+      </section>
+
+      <section id="skills" class="border-t border-slate-200 pt-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Keahlian Teknis</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            HTML & CSS
+          </div>
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            Tailwind CSS
+          </div>
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            JavaScript
+          </div>
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            PHP & Laravel
+          </div>
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            MySQL Database
+          </div>
+          <div
+            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
+          >
+            Git & GitHub
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="border-t border-slate-200 pt-12 pb-12">
+        <div
+          class="bg-slate-900 text-white p-8 rounded-2xl text-center md:text-left md:flex md:justify-between md:items-center gap-6"
+        >
+          <div>
+            <h3 class="text-xl font-bold mb-2">
+              Punya pertanyaan atau project PKL?
+            </h3>
+            <p class="text-slate-400 text-sm">
+              Silakan hubungi saya kapan saja, saya akan merespons secepatnya.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/628380506759"
+            target="_blank"
+            class="mt-4 md:mt-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl inline-flex items-center justify-center gap-2 transition shadow-md"
+          >
+            WhatsApp: 0838-0506-759
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-white py-6 text-center text-xs text-slate-400 border-t border-slate-200"
+    >
+      &copy; 2026 Portofolio PKL. Dibuat dengan HTML, CSS, dan JS.
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
