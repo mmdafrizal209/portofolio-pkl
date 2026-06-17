@@ -1,17 +1,46 @@
-/* Efek geser halus saat menu navigasi diklik */
-html {
-  scroll-behavior: smooth;
+/* Mengubah global font agar serasi menggunakan Inter */
+* {
+  font-family: "Inter", sans-serif;
 }
 
-/* Animasi garis kedip-kedip (kursor) di efek mengetik */
+/* Animasi kursor berkedip neon untuk efek typewriter */
 #animasi-teks {
-  border-right: 2px solid #2563eb;
+  border-right: 2px solid #60a5fa;
   padding-right: 4px;
-  animation: kedip 0.7s infinite step-end;
+  animation: kursorKedip 0.8s infinite step-end;
 }
 
-@keyframes kedip {
+@keyframes kursorKedip {
   50% {
     border-color: transparent;
   }
+}
+
+/* Efek Hover Interaktif Premium pada Kartu Skill */
+.skill-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(59, 130, 246, 0.4);
+  background-color: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(59, 130, 246, 0.05);
+  color: #60a5fa;
+}
+
+/* ================================================ */
+/* LOGIKA ANIMASI SCROLL (Dikontrol oleh script.js) */
+/* ================================================ */
+.efek-muncul {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Kelas aktif saat komponen masuk dalam pantauan scroll */
+.efek-muncul.sudah-muncul {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }

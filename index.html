@@ -1,142 +1,510 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio PKL - M. Afrizal</title>
+    <title>Moch Afrizal Permana Harun | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-slate-50 text-slate-800 font-sans">
+  <body
+    class="bg-[#0b0f19] text-slate-200 antialiased selection:bg-blue-500/30 selection:text-blue-200"
+  >
+    <div
+      class="fixed top-[-10%] left-[-10%] w-[50rem] h-[50rem] rounded-full bg-blue-900/10 blur-[120px] pointer-events-none z-0"
+    ></div>
+    <div
+      class="fixed bottom-[-10%] right-[-10%] w-[40rem] h-[40rem] rounded-full bg-indigo-900/10 blur-[120px] pointer-events-none z-0"
+    ></div>
+
     <header
-      class="sticky top-0 z-50 bg-white border-b border-slate-200 py-4 shadow-sm"
+      class="sticky top-0 z-50 bg-[#0b0f19]/70 backdrop-blur-md border-b border-slate-800/60 py-4 shadow-lg shadow-black/5"
     >
-      <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
-        <span class="text-xl font-bold text-blue-600">Portofolio.</span>
-        <nav class="space-x-4 font-medium text-sm text-slate-600">
-          <a href="#about" class="hover:text-blue-600">Tentang</a>
-          <a href="#skills" class="hover:text-blue-600">Keahlian</a>
-          <a href="#contact" class="hover:text-blue-600">Kontak</a>
+      <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+        <span
+          class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
+          >Moch Afrizal Permana Harun<span class="text-blue-500">.</span></span
+        >
+        <nav class="space-x-6 font-medium text-sm text-slate-400">
+          <a
+            href="#about"
+            class="hover:text-blue-400 transition-colors duration-300"
+            >Tentang</a
+          >
+          <a
+            href="#skills"
+            class="hover:text-blue-400 transition-colors duration-300"
+            >Keahlian</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-blue-400 transition-colors duration-300"
+            >Project</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-blue-400 transition-colors duration-300"
+            >Kontak</a
+          >
         </nav>
       </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-12 space-y-20">
+    <main class="relative z-10 max-w-4xl mx-auto px-6 py-16 space-y-20">
       <section
         id="hero"
-        class="flex flex-col md:flex-row items-center justify-between gap-8 py-8"
+        class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-8"
       >
-        <div class="space-y-4 text-center md:text-left flex-1">
-          <span
-            class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
-            >Peserta PKL RPL</span
+        <div class="space-y-6 text-center md:text-left flex-1">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wide uppercase text-blue-400 bg-blue-500/10 rounded-full border border-blue-500/20"
           >
-          <h1 class="text-4xl font-extrabold text-slate-900">
-            Halo, Saya M. Afrizal
+            <span
+              class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"
+            ></span>
+            Available for Projects
+          </div>
+
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight"
+          >
+            Halo, Saya <br class="hidden md:block" /><span
+              class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
+              >Moch Afrizal Permana Harun</span
+            >
           </h1>
 
-          <p class="text-lg text-slate-600">
+          <p class="text-lg md:text-xl text-slate-400 font-light min-h-[30px]">
             Saya seorang
-            <span id="animasi-teks" class="text-blue-600 font-bold"></span>
+            <span
+              id="animasi-teks"
+              class="text-blue-400 font-semibold tracking-wide"
+            ></span>
           </p>
 
-          <div class="pt-2">
+          <div class="pt-4">
             <a
               href="#contact"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition inline-block"
+              class="group relative inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-0.5 inline-block"
             >
               Hubungi Saya
+              <svg
+                class="w-4 h-4 transition-transform group-hover:translate-x-1 inline-block"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
-        <div
-          class="w-48 h-48 rounded-full overflow-hidden shadow-lg bg-slate-300 border-4 border-white flex-shrink-0"
-        >
-          <img
-            src="assets/images/profile.jpg"
-            alt="Foto M. Afrizal"
-            class="w-full h-full object-cover"
-            onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80'"
-          />
+
+        <div class="relative group flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur-md opacity-40 group-hover:opacity-70 transition duration-500"
+          ></div>
+          <div
+            class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-slate-800/80 bg-slate-900 flex-shrink-0"
+          >
+            <img
+              src="assets/profile saya.jpeg"
+              alt="Foto M. Afrizal"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80'"
+            />
+          </div>
         </div>
       </section>
 
-      <section id="about" class="border-t border-slate-200 pt-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">Tentang Saya</h2>
-        <p class="text-slate-600 leading-relaxed text-base">
-          Saya adalah siswa SMK jurusan
-          <strong>Rekayasa Perangkat Lunak (RPL)</strong> yang fokus pada
-          pengembangan aplikasi web dan mobile. Melalui kegiatan PKL ini, saya
-          ingin mempraktikkan keterampilan coding saya dalam project nyata dan
-          belajar langsung dari mentor di industri.
+      <section
+        id="about"
+        class="efek-muncul scroll-mt-24 bg-slate-900/40 border border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-white mb-4 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-blue-500 rounded-full"></span> Tentang Saya
+        </h2>
+        <p class="text-slate-400 leading-relaxed text-base font-light">
+          Saya adalah siswa SMKN 1 CIANJUR jurusan
+          <strong class="text-slate-200 font-semibold"
+            >Rekayasa Perangkat Lunak (RPL)</strong
+          >
+          yang memiliki fokus mendalam pada pengembangan aplikasi web dan
+          mobile. Saya gemar menuangkan ide kreatif ke dalam baris kode,
+          membangun antarmuka UI/UX yang responsif, serta mempelajari arsitektur
+          teknologi baru untuk menciptakan solusi digital yang efisien dan
+          fungsional.
         </p>
       </section>
 
-      <section id="skills" class="border-t border-slate-200 pt-12">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Keahlian Teknis</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            HTML & CSS
+      <section
+        id="skills"
+        class="efek-muncul scroll-mt-24 bg-slate-900/40 border border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-white mb-6 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-indigo-500 rounded-full"></span> Keahlian
+          Teknis
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">HTML & CSS</span>
+              <span class="text-blue-400">85%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
           </div>
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            Tailwind CSS
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">Tailwind CSS</span>
+              <span class="text-blue-400">65%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
           </div>
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            JavaScript
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">JavaScript</span>
+              <span class="text-blue-400">60%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
           </div>
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            PHP & Laravel
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">PHP & Laravel</span>
+              <span class="text-blue-400">70%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
           </div>
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            MySQL Database
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">Flutter & Dart</span>
+              <span class="text-blue-400">80%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
           </div>
-          <div
-            class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm text-center font-semibold text-sm"
-          >
-            Git & GitHub
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">MySQL Database</span>
+              <span class="text-blue-400">75%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+
+          <div class="space-y-2 sm:col-span-2">
+            <div class="flex justify-between items-center font-medium text-sm">
+              <span class="text-slate-300">Git & GitHub</span>
+              <span class="text-blue-400">80%</span>
+            </div>
+            <div
+              class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="border-t border-slate-200 pt-12 pb-12">
-        <div
-          class="bg-slate-900 text-white p-8 rounded-2xl text-center md:text-left md:flex md:justify-between md:items-center gap-6"
+      <section
+        id="projects"
+        class="efek-muncul scroll-mt-24 bg-slate-900/40 border border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-white mb-6 tracking-tight flex items-center gap-2"
         >
-          <div>
-            <h3 class="text-xl font-bold mb-2">
-              Punya pertanyaan atau project PKL?
-            </h3>
-            <p class="text-slate-400 text-sm">
-              Silakan hubungi saya kapan saja, saya akan merespons secepatnya.
-            </p>
-          </div>
-          <a
-            href="https://wa.me/628380506759"
-            target="_blank"
-            class="mt-4 md:mt-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl inline-flex items-center justify-center gap-2 transition shadow-md"
+          <span class="w-5 h-1 bg-purple-500 rounded-full"></span> Project &
+          Karya
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="efek-muncul bg-slate-950/60 border border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-blue-500/30"
           >
-            WhatsApp: 0838-0506-759
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors"
+                >
+                  Muslim App
+                </h3>
+                <span
+                  class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-emerald-400 bg-emerald-500/10 rounded-full border border-emerald-500/20"
+                  >School Project</span
+                >
+              </div>
+              <p class="text-slate-400 text-sm font-light leading-relaxed">
+                Aplikasi mobile pemandu ibadah digital yang menyediakan fitur
+                Al-Qur'an digital, jadwal sholat berbasis lokasi realtime, serta
+                kumpulan doa harian untuk mendukung kebutuhan ibadah umat
+                Muslim.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-medium border border-slate-700/50"
+                  >Flutter</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-medium border border-slate-700/50"
+                  >Dart</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-medium border border-slate-700/50"
+                  >Islamic API</span
+                >
+              </div>
+            </div>
+            <div
+              class="p-6 pt-0 mt-auto border-t border-slate-900 flex gap-4 text-sm font-medium"
+            >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-blue-400 hover:text-blue-300 inline-flex items-center gap-1.5 transition"
+              >
+                Repository
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="efek-muncul bg-slate-950/60 border border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-indigo-500/30"
+          >
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors"
+                >
+                  Animated Landing Page
+                </h3>
+                <span
+                  class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-blue-400 bg-blue-500/10 rounded-full border border-blue-500/20"
+                  >School Project</span
+                >
+              </div>
+              <p class="text-slate-400 text-sm font-light leading-relaxed">
+                Sebuah platform landing page modern yang dibangun dengan fokus
+                pada aspek visual dan interaktivitas. Mengimplementasikan
+                berbagai teknik animasi transisi, micro-interactions, serta tata
+                letak responsif untuk menciptakan pengalaman pengguna yang
+                dinamis, estetik, dan hidup saat diakses di berbagai perangkat.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-medium border border-slate-700/50"
+                  >Next.js</span
+                >
+              </div>
+            </div>
+            <div
+              class="p-6 pt-0 mt-auto border-t border-slate-900 flex gap-4 text-sm font-medium"
+            >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1.5 transition"
+              >
+                Repository
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="efek-muncul scroll-mt-24 bg-slate-900/40 border border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-white mb-4 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-emerald-500 rounded-full"></span> Hubungi Saya
+        </h2>
+        <p class="text-slate-400 font-light mb-8 text-base">
+          Tertarik dengan profil saya atau ingin berdiskusi mengenai
+          pengembangan aplikasi? Jangan ragu untuk menghubungi saya melalui
+          saluran kontak di bawah ini.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a
+            href="https://wa.me/6283805026759"
+            target="_blank"
+            class="flex items-center gap-4 p-4 bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 rounded-2xl transition duration-300 group"
+          >
+            <div
+              class="p-3 bg-emerald-500 rounded-xl text-white shadow-lg shadow-emerald-500/20"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.849.002-2.631-1.02-5.105-2.881-6.968-1.862-1.863-4.337-2.887-6.971-2.888-5.435 0-9.856 4.417-9.86 9.85-.001 1.953.51 3.86 1.482 5.568l-.994 3.636 3.72-.975zm10.963-6.525c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">WhatsApp</div>
+              <div
+                class="text-sm font-semibold text-white group-hover:text-emerald-400 transition"
+              >
+                0838-0502-6759
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="mailto:afrizal@example.com"
+            class="flex items-center gap-4 p-4 bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 rounded-2xl transition duration-300 group"
+          >
+            <div
+              class="p-3 bg-blue-500 rounded-xl text-white shadow-lg shadow-blue-500/20"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">Email Resmi</div>
+              <div
+                class="text-sm font-semibold text-white group-hover:text-blue-400 transition"
+              >
+              mochaprizal1234@gmail.com
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="flex items-center gap-4 p-4 bg-purple-500/10 border border-purple-500/20 hover:bg-purple-500/20 rounded-2xl transition duration-300 group"
+          >
+            <div
+              class="p-3 bg-purple-500 rounded-xl text-white shadow-lg shadow-purple-500/20"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">Open Source</div>
+              <div
+                class="text-sm font-semibold text-white group-hover:text-purple-400 transition"
+              >
+                GitHub Profil
+              </div>
+            </div>
           </a>
         </div>
       </section>
     </main>
 
     <footer
-      class="bg-white py-6 text-center text-xs text-slate-400 border-t border-slate-200"
+      class="bg-[#070a12] py-8 text-center text-xs text-slate-500 border-t border-slate-900"
     >
-      &copy; 2026 Portofolio PKL. Dibuat dengan HTML, CSS, dan JS.
+      &copy; 2026 Moch. Afrizal. Permanaa. Harun. Hak Cipta Dilindungi. Built
+      with HTML, CSS, & JS.
     </footer>
 
     <script src="js/script.js"></script>
