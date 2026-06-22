@@ -12,12 +12,11 @@
       rel="stylesheet"
     />
 
-    <!-- CDN Tailwind dan Konfigurasi Tema Class -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class'
-      }
+        darkMode: "class",
+      };
     </script>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -25,18 +24,26 @@
   <body
     class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-200 antialiased selection:bg-blue-500/30 selection:text-blue-600 dark:selection:text-blue-200 transition-colors duration-300"
   >
-    <!-- Background Glow -->
-    <div class="hidden dark:block fixed top-[-10%] left-[-10%] w-[50rem] h-[50rem] rounded-full bg-blue-900/10 blur-[120px] pointer-events-none z-0"></div>
-    <div class="hidden dark:block fixed bottom-[-10%] right-[-10%] w-[40rem] h-[40rem] rounded-full bg-indigo-900/10 blur-[120px] pointer-events-none z-0"></div>
+    <div
+      class="hidden dark:block fixed top-[-10%] left-[-10%] w-[50rem] h-[50rem] rounded-full bg-blue-900/10 blur-[120px] pointer-events-none z-0"
+    ></div>
+    <div
+      class="hidden dark:block fixed bottom-[-10%] right-[-10%] w-[40rem] h-[40rem] rounded-full bg-indigo-900/10 blur-[120px] pointer-events-none z-0"
+    ></div>
 
-    <header class="sticky top-0 z-50 bg-white/70 dark:bg-[#0b0f19]/70 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/60 py-4 shadow-lg shadow-black/5">
-      <div class="max-w-4xl mx-auto px-6 flex justify-between items-center relative">
-        <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+    <header
+      class="sticky top-0 z-50 bg-white/70 dark:bg-[#0b0f19]/70 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/60 py-4 shadow-lg shadow-black/5"
+    >
+      <div
+        class="max-w-4xl mx-auto px-6 flex justify-between items-center relative"
+      >
+        <span
+          class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent"
+        >
           Moch Afrizal Permana Harun<span class="text-blue-500">.</span>
         </span>
 
         <div class="flex items-center gap-2 sm:gap-4">
-          <!-- SAKELAR TOMBOL BAHASA -->
           <button
             id="lang-toggle"
             class="px-2.5 py-1.5 text-xs font-bold rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-600 dark:text-blue-400 transition-all duration-300 focus:outline-none uppercase"
@@ -45,96 +52,230 @@
             ID
           </button>
 
-          <!-- SAKELAR TOMBOL THEME TOGGLE -->
           <button
             id="theme-toggle"
             class="p-2 rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-amber-500 dark:text-amber-400 transition-all duration-300 focus:outline-none"
             aria-label="Toggle Theme"
           >
-            <!-- Icon Matahari -->
-            <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <svg
+              id="theme-icon-sun"
+              class="w-5 h-5 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+            >
               <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              ></path>
             </svg>
-            <!-- Icon Bulan -->
-            <svg id="theme-icon-moon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <svg
+              id="theme-icon-moon"
+              class="w-5 h-5 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+            >
               <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
             </svg>
           </button>
 
-          <button id="menu-toggle" class="sm:hidden text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white focus:outline-none z-50 p-2" aria-label="Toggle Menu">
-            <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          <button
+            id="menu-toggle"
+            class="sm:hidden text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white focus:outline-none z-50 p-2"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              id="menu-icon"
+              class="w-6 h-6 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
             </svg>
           </button>
 
-          <nav id="nav-menu" class="hidden absolute top-12 right-2 flex flex-col space-y-4 font-semibold text-base text-slate-800 dark:text-slate-200 text-right z-50 sm:static sm:w-auto sm:bg-transparent sm:border-none sm:p-0 sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:text-sm sm:text-left text-slate-500 dark:text-slate-400">
-            <a href="#about" data-lang="nav-about" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5">Tentang</a>
-            <a href="#skills" data-lang="nav-skills" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5">Keahlian</a>
-            <a href="#projects" data-lang="nav-projects" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5">Project</a>
-            <a href="#blog" data-lang="nav-blog" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5">Blog</a>
-            <a href="#contact" data-lang="nav-contact" class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5">Kontak</a>
+          <nav
+            id="nav-menu"
+            class="hidden absolute top-12 right-2 flex flex-col space-y-4 font-semibold text-base text-slate-800 dark:text-slate-200 text-right z-50 sm:static sm:w-auto sm:bg-transparent sm:border-none sm:p-0 sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:text-sm sm:text-left text-slate-500 dark:text-slate-400"
+          >
+            <a
+              href="#about"
+              data-lang="nav-about"
+              class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5"
+              >Tentang</a
+            >
+            <a
+              href="#skills"
+              data-lang="nav-skills"
+              class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5"
+              >Keahlian</a
+            >
+            <a
+              href="#projects"
+              data-lang="nav-projects"
+              class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5"
+              >Project</a
+            >
+            <a
+              href="#blog"
+              data-lang="nav-blog"
+              class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5"
+              >Blog</a
+            >
+            <a
+              href="#contact"
+              data-lang="nav-contact"
+              class="nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 block py-0.5"
+              >Kontak</a
+            >
           </nav>
         </div>
       </div>
     </header>
 
     <main class="relative z-10 max-w-4xl mx-auto px-6 py-16 space-y-20">
-      <!-- Section Hero (Ditambahkan Flex Layout Kolom untuk Tombol Aksi) -->
-      <section id="hero" class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-8">
+      <section
+        id="hero"
+        class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-8"
+      >
         <div class="space-y-6 text-center md:text-left flex-1">
-          <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wide uppercase text-blue-600 bg-blue-500/10 dark:text-blue-400 dark:bg-blue-500/10 rounded-full border border-blue-500/20">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse"></span>
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wide uppercase text-blue-600 bg-blue-500/10 dark:text-blue-400 dark:bg-blue-500/10 rounded-full border border-blue-500/20"
+          >
+            <span
+              class="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 animate-pulse"
+            ></span>
             <span data-lang="hero-available">Available for Projects</span>
           </div>
-          <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-            <span data-lang="hero-greet">Halo, Saya</span> <br class="hidden md:block" /><span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">Moch Afrizal Permana Harun</span>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight"
+          >
+            <span data-lang="hero-greet">Halo, Saya</span>
+            <br class="hidden md:block" /><span
+              class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent"
+              >Moch Afrizal Permana Harun</span
+            >
           </h1>
-          <p class="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-light min-h-[30px]">
-            <span data-lang="hero-iam">Saya seorang</span> <span id="animasi-teks" class="text-blue-600 dark:text-blue-400 font-semibold tracking-wide"></span>
+          <p
+            class="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-light min-h-[30px]"
+          >
+            <span data-lang="hero-iam">Saya seorang</span>
+            <span
+              id="animasi-teks"
+              class="text-blue-600 dark:text-blue-400 font-semibold tracking-wide"
+            ></span>
           </p>
-          
-          <!-- SEKARANG DUA TOMBOL BERJEJER: Hubungi Saya & Download CV -->
-          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
-            <!-- Tombol Hubungi Saya -->
-            <a href="#contact" data-lang="hero-btn" class="w-full sm:w-auto group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-0.5">
-              Hubungi Saya
-              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4"
+          >
+            <a
+              href="#contact"
+              class="w-full sm:w-auto group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-0.5"
+            >
+              <span data-lang="hero-btn">Hubungi Saya</span>
+              <svg
+                class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
               </svg>
             </a>
-            
-            <!-- TOMBOL BARU: Download CV (Pastikan arahkan ke file CV pdf kamu nantinya di atribut download) -->
-            <a href="assets/cv-afrizal.pdf" download="CV_Moch_Afrizal_Permana_Harun.pdf" data-lang="hero-cv" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none">
-              Unduh CV
-              <svg class="w-4 h-4 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16v1a3 3 0 003 3h12a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+
+            <a
+              href="assets/cv-afrizal.pdf"
+              download="CV_Moch_Afrizal_Permana_Harun.pdf"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold px-6 py-3.5 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none"
+            >
+              <span data-lang="hero-cv">Unduh CV</span>
+              <svg
+                class="w-4 h-4 text-slate-500 dark:text-slate-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16v1a3 3 0 003 3h12a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                ></path>
               </svg>
             </a>
           </div>
         </div>
         <div class="relative group flex-shrink-0">
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur-md opacity-20 dark:opacity-40 group-hover:opacity-70 transition duration-500"></div>
-          <div class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900 flex-shrink-0">
-            <img src="assets/profile saya.jpeg" alt="Foto M. Afrizal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80'" />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur-md opacity-20 dark:opacity-40 group-hover:opacity-70 transition duration-500"
+          ></div>
+          <div
+            class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900 flex-shrink-0"
+          >
+            <img
+              src="assets/profile saya.jpeg"
+              alt="Foto M. Afrizal"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80'"
+            />
           </div>
         </div>
       </section>
 
-      <!-- Section Tentang -->
-      <section id="about" class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl">
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight flex items-center gap-2">
-          <span class="w-5 h-1 bg-blue-500 rounded-full"></span> <span data-lang="about-title">Tentang Saya</span>
+      <section
+        id="about"
+        class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-blue-500 rounded-full"></span>
+          <span data-lang="about-title">Tentang Saya</span>
         </h2>
-        <p data-lang="about-desc" class="text-slate-500 dark:text-slate-400 leading-relaxed text-base font-light">
-          Saya adalah siswa SMKN 1 CIANJUR jurusan <strong class="text-slate-800 dark:text-slate-200 font-semibold">Rekayasa Perangkat Lunak (RPL)</strong> yang memiliki focus mendalam pada pengembangan aplikasi web dan mobile. Saya gemar menuangkan id kreatif ke dalam baris kode, membangun antarmuka UI/UX yang responsif, serta mempelajari arsitektur teknologi baru untuk menciptakan solusi digital yang efisien dan fungsional.
+        <p
+          data-lang="about-desc"
+          class="text-slate-500 dark:text-slate-400 leading-relaxed text-base font-light"
+        >
+          Saya adalah siswa SMKN 1 CIANJUR jurusan
+          <strong class="text-slate-800 dark:text-slate-200 font-semibold"
+            >Rekayasa Perangkat Lunak (RPL)</strong
+          >
+          yang memiliki focus mendalam pada pengembangan aplikasi web dan
+          mobile. Saya gemar menuangkan id kreatif ke dalam baris kode,
+          membangun antarmuka UI/UX yang responsif, serta mempelajari arsitektur
+          teknologi baru untuk menciptakan solusi digital yang efisien dan
+          fungsional.
         </p>
       </section>
 
-      <!-- Section Keahlian -->
-      <section id="skills" class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl">
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2">
-          <span class="w-5 h-1 bg-indigo-500 rounded-full"></span> <span data-lang="skills-title">Keahlian Teknis</span>
+      <section
+        id="skills"
+        class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-indigo-500 rounded-full"></span>
+          <span data-lang="skills-title">Keahlian Teknis</span>
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
           <div class="space-y-2">
@@ -142,17 +283,29 @@
               <span class="text-slate-700 dark:text-slate-300">HTML & CSS</span>
               <span class="text-blue-600 dark:text-blue-400">85%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 90%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 90%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2">
             <div class="flex justify-between items-center font-medium text-sm">
-              <span class="text-slate-700 dark:text-slate-300">Tailwind CSS</span>
+              <span class="text-slate-700 dark:text-slate-300"
+                >Tailwind CSS</span
+              >
               <span class="text-blue-600 dark:text-blue-400">60%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 85%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2">
@@ -160,139 +313,307 @@
               <span class="text-slate-700 dark:text-slate-300">JavaScript</span>
               <span class="text-blue-600 dark:text-blue-400">60%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 80%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 80%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2">
             <div class="flex justify-between items-center font-medium text-sm">
-              <span class="text-slate-700 dark:text-slate-300">PHP & Laravel</span>
+              <span class="text-slate-700 dark:text-slate-300"
+                >PHP & Laravel</span
+              >
               <span class="text-blue-600 dark:text-blue-400">70%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 85%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2">
             <div class="flex justify-between items-center font-medium text-sm">
-              <span class="text-slate-700 dark:text-slate-300">Flutter & Dart</span>
+              <span class="text-slate-700 dark:text-slate-300"
+                >Flutter & Dart</span
+              >
               <span class="text-blue-600 dark:text-blue-400">80%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 75%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 75%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2">
             <div class="flex justify-between items-center font-medium text-sm">
-              <span class="text-slate-700 dark:text-slate-300">MySQL Database</span>
+              <span class="text-slate-700 dark:text-slate-300"
+                >MySQL Database</span
+              >
               <span class="text-blue-600 dark:text-blue-400">70%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 80%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 80%"
+              ></div>
             </div>
           </div>
           <div class="space-y-2 sm:col-span-2">
             <div class="flex justify-between items-center font-medium text-sm">
-              <span class="text-slate-700 dark:text-slate-300">Git & GitHub</span>
+              <span class="text-slate-700 dark:text-slate-300"
+                >Git & GitHub</span
+              >
               <span class="text-blue-600 dark:text-blue-400">80%</span>
             </div>
-            <div class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 85%"></div>
+            <div
+              class="w-full h-2 bg-slate-200 dark:bg-slate-950 rounded-full overflow-hidden border border-slate-300/50 dark:border-slate-800/60"
+            >
+              <div
+                class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
+                style="width: 85%"
+              ></div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section Project -->
-      <section id="projects" class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl">
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2">
-          <span class="w-5 h-1 bg-purple-500 rounded-full"></span> <span data-lang="projects-title">Project & Karya</span>
+      <section
+        id="projects"
+        class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-purple-500 rounded-full"></span>
+          <span data-lang="projects-title">Project & Karya</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="efek-muncul bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-blue-500/30">
+          <div
+            class="efek-muncul bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-blue-500/30"
+          >
             <div class="p-6 space-y-4">
               <div class="flex justify-between items-start">
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Muslim App</h3>
-                <span data-lang="project-tag-1" class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-emerald-600 bg-emerald-500/10 dark:text-emerald-400 border border-emerald-500/20 rounded-full">School Project</span>
+                <h3
+                  class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                >
+                  Muslim App
+                </h3>
+                <span
+                  data-lang="project-tag-1"
+                  class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-emerald-600 bg-emerald-500/10 dark:text-emerald-400 border border-emerald-500/20 rounded-full"
+                  >School Project</span
+                >
               </div>
-              <p data-lang="project-desc-1" class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed">Aplikasi mobile pemandu ibadah digital yang menyediakan fitur Al-Qur'an digital, jadwal sholat berbasis lokasi realtime, serta kumpulan doa harian untuk mendukung kebutuhan ibadah umat Muslim.</p>
+              <p
+                data-lang="project-desc-1"
+                class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed"
+              >
+                Aplikasi mobile pemandu ibadah digital yang menyediakan fitur
+                Al-Qur'an digital, jadwal sholat berbasis lokasi realtime, serta
+                kumpulan doa harian untuk mendukung kebutuhan ibadah umat
+                Muslim.
+              </p>
               <div class="flex flex-wrap gap-2 pt-2">
-                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50">Flutter</span>
-                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50">Dart</span>
-                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50">Islamic API</span>
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50"
+                  >Flutter</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50"
+                  >Dart</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50"
+                  >Islamic API</span
+                >
               </div>
             </div>
-            <div class="p-6 pt-0 mt-auto border-t border-slate-200 dark:border-slate-900 flex gap-4 text-sm font-medium">
-              <a href="https://github.com" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 inline-flex items-center gap-1.5 transition">
+            <div
+              class="p-6 pt-0 mt-auto border-t border-slate-200 dark:border-slate-900 flex gap-4 text-sm font-medium"
+            >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 inline-flex items-center gap-1.5 transition"
+              >
                 Repository
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>
-          <div class="efek-muncul bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-indigo-500/30">
+          <div
+            class="efek-muncul bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-indigo-500/30"
+          >
             <div class="p-6 space-y-4">
               <div class="flex items-start justify-between gap-4">
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Animated Landing Page</h3>
-                <span data-lang="project-tag-2" class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-blue-600 bg-blue-500/10 dark:text-blue-400 border border-blue-500/20 rounded-full whitespace-nowrap">School Project</span>
+                <h3
+                  class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  Animated Landing Page
+                </h3>
+                <span
+                  data-lang="project-tag-2"
+                  class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 text-blue-600 bg-blue-500/10 dark:text-blue-400 border border-blue-500/20 rounded-full whitespace-nowrap"
+                  >School Project</span
+                >
               </div>
-              <p data-lang="project-desc-2" class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed">Sebuah platform landing page modern yang dibangun dengan fokus pada aspek visual dan interaktivitas. Mengimplementasikan berbagai teknik animasi transisi, micro-interactions, serta tata letak responsif untuk menciptakan pengalaman pengguna yang dinamis, estetik, dan hidup saat diakses di berbagai perangkat.</p>
+              <p
+                data-lang="project-desc-2"
+                class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed"
+              >
+                Sebuah platform landing page modern yang dibangun dengan fokus
+                pada aspek visual dan interaktivitas. Mengimplementasikan
+                berbagai teknik animasi transisi, micro-interactions, serta tata
+                letak responsif untuk menciptakan pengalaman pengguna yang
+                dinamis, estetik, dan hidup saat diakses di berbagai perangkat.
+              </p>
               <div class="flex flex-wrap gap-2 pt-2">
-                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50">Next.js</span>
+                <span
+                  class="text-xs px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium border border-slate-300 dark:border-slate-700/50"
+                  >Next.js</span
+                >
               </div>
             </div>
-            <div class="p-6 pt-0 mt-auto border-t border-slate-200 dark:border-slate-900 flex gap-4 text-sm font-medium">
-              <a href="https://github.com" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 inline-flex items-center gap-1.5 transition">
+            <div
+              class="p-6 pt-0 mt-auto border-t border-slate-200 dark:border-slate-900 flex gap-4 text-sm font-medium"
+            >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 inline-flex items-center gap-1.5 transition"
+              >
                 Repository
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section Blog -->
-      <section id="blog" class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl">
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2">
-          <span class="w-5 h-1 bg-blue-500 rounded-full"></span> <span data-lang="blog-title">Blog & Catatan</span>
+      <section
+        id="blog"
+        class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-blue-500 rounded-full"></span>
+          <span data-lang="blog-title">Blog & Catatan</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Artikel 1 -->
-          <article class="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-blue-500/30 p-6 space-y-3">
+          <article
+            class="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-blue-500/30 p-6 space-y-3"
+          >
             <div class="space-y-2">
-              <div class="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 font-medium">
+              <div
+                class="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 font-medium"
+              >
                 <span data-lang="blog-date-1">20 Juni 2026</span>
-                <span class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold text-[10px] tracking-wide uppercase border border-blue-500/20">Tips & Trick</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold text-[10px] tracking-wide uppercase border border-blue-500/20"
+                  >Tips & Trick</span
+                >
               </div>
-              <h3 data-lang="blog-headline-1" class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <h3
+                data-lang="blog-headline-1"
+                class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+              >
                 Belajar Tailwind CSS dengan Cepat untuk Pemula
               </h3>
-              <p data-lang="blog-summary-1" class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed line-clamp-3">
-                Tailwind CSS mengubah cara kita mendesain website. Mari pelajari konsep utility-first framework dan cara membuat kodingan CSS portfolio menjadi ringkas.
+              <p
+                data-lang="blog-summary-1"
+                class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed line-clamp-3"
+              >
+                Tailwind CSS mengubah cara kita mendesain website. Mari pelajari
+                konsep utility-first framework dan cara membuat kodingan CSS
+                portfolio menjadi ringkas.
               </p>
             </div>
-            <div class="pt-2 border-t border-slate-200 dark:border-slate-900 flex text-sm font-medium">
-              <button data-art="tailwind" data-lang="blog-read-1" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 inline-flex items-center gap-1 font-semibold transition focus:outline-none">
+            <div
+              class="pt-2 border-t border-slate-200 dark:border-slate-900 flex text-sm font-medium"
+            >
+              <button
+                data-art="tailwind"
+                data-lang="blog-read-1"
+                class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 inline-flex items-center gap-1 font-semibold transition focus:outline-none"
+              >
                 Baca Selengkapnya &rarr;
               </button>
             </div>
           </article>
 
-          <!-- Artikel 2 -->
-          <article class="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-indigo-500/30 p-6 space-y-3">
+          <article
+            class="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-indigo-500/30 p-6 space-y-3"
+          >
             <div class="space-y-2">
-              <div class="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 font-medium">
+              <div
+                class="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 font-medium"
+              >
                 <span data-lang="blog-date-2">15 Mei 2026</span>
-                <span class="px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-semibold text-[10px] tracking-wide uppercase border border-indigo-500/20">Mobile</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-semibold text-[10px] tracking-wide uppercase border border-indigo-500/20"
+                  >Mobile</span
+                >
               </div>
-              <h3 data-lang="blog-headline-2" class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+              <h3
+                data-lang="blog-headline-2"
+                class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+              >
                 Mengapa Memilih Flutter di Tahun 2026?
               </h3>
-              <p data-lang="blog-summary-2" class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed line-clamp-3">
-                Flutter masih menjadi primadona pengembangan aplikasi cross-platform. Mari bedah keunggulan performa dan efisiensi satu basis kode untuk Android dan iOS.
+              <p
+                data-lang="blog-summary-2"
+                class="text-slate-500 dark:text-slate-400 text-sm font-light leading-relaxed line-clamp-3"
+              >
+                Flutter masih menjadi primadona pengembangan aplikasi
+                cross-platform. Mari bedah keunggulan performa dan efisiensi
+                satu basis kode untuk Android dan iOS.
               </p>
             </div>
-            <div class="pt-2 border-t border-slate-200 dark:border-slate-900 flex text-sm font-medium">
-              <button data-art="flutter" data-lang="blog-read-2" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 inline-flex items-center gap-1 font-semibold transition focus:outline-none">
+            <div
+              class="pt-2 border-t border-slate-200 dark:border-slate-900 flex text-sm font-medium"
+            >
+              <button
+                data-art="flutter"
+                data-lang="blog-read-2"
+                class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 inline-flex items-center gap-1 font-semibold transition focus:outline-none"
+              >
                 Baca Selengkapnya &rarr;
               </button>
             </div>
@@ -300,79 +621,175 @@
         </div>
       </section>
 
-      <!-- Section Kontak -->
-      <section id="contact" class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl">
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight flex items-center gap-2">
-          <span class="w-5 h-1 bg-emerald-500 rounded-full"></span> <span data-lang="contact-title">Hubungi Saya</span>
+      <section
+        id="contact"
+        class="efek-muncul scroll-mt-24 bg-white/60 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/60 p-8 rounded-3xl backdrop-blur-sm shadow-xl"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight flex items-center gap-2"
+        >
+          <span class="w-5 h-1 bg-emerald-500 rounded-full"></span>
+          <span data-lang="contact-title">Hubungi Saya</span>
         </h2>
-        <p data-lang="contact-desc" class="text-slate-500 dark:text-slate-400 font-light mb-8 text-base">
-          Tertarik dengan profil saya atau ingin berdiskusi mengenai pengembangan aplikasi? Jangan ragu untuk menghubungi saya melalui saluran kontak di bawah ini.
+        <p
+          data-lang="contact-desc"
+          class="text-slate-500 dark:text-slate-400 font-light mb-8 text-base"
+        >
+          Tertarik dengan profil saya atau ingin berdiskusi mengenai
+          pengembangan aplikasi? Jangan ragu untuk menghubungi saya melalui
+          saluran kontak di bawah ini.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <!-- WhatsApp -->
-          <a href="https://wa.me/6283805026759" target="_blank" class="flex items-center gap-4 p-4 bg-emerald-500/5 dark:bg-emerald-500/5 border border-emerald-500/20 hover:bg-emerald-500/20 dark:hover:bg-emerald-500/40 rounded-2xl transition duration-300 group">
-            <div class="p-3 bg-emerald-500 rounded-xl text-white shadow-lg shadow-emerald-500/20 flex-shrink-0">
+          <a
+            href="https://wa.me/6283805026759"
+            target="_blank"
+            class="flex items-center gap-4 p-4 bg-emerald-500/5 dark:bg-emerald-500/5 border border-emerald-500/20 hover:bg-emerald-500/20 dark:hover:bg-emerald-500/40 rounded-2xl transition duration-300 group"
+          >
+            <div
+              class="p-3 bg-emerald-500 rounded-xl text-white shadow-lg shadow-emerald-500/20 flex-shrink-0"
+            >
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.849.002-2.631-1.02-5.105-2.881-6.968-1.862-1.863-4.337-2.887-6.971-2.888-5.435 0-9.856 4.417-9.86 9.85-.001 1.953.51 3.86 1.482 5.568l-.994 3.636 3.72-.975zm10.963-6.525c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.849.002-2.631-1.02-5.105-2.881-6.968-1.862-1.863-4.337-2.887-6.971-2.888-5.435 0-9.856 4.417-9.86 9.85-.001 1.953.51 3.86 1.482 5.568l-.994 3.636 3.72-.975zm10.963-6.525c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
               </svg>
             </div>
             <div>
-              <div class="text-xs text-slate-400 dark:text-slate-500 font-medium">WhatsApp</div>
-              <div class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">0838-0502-6759</div>
+              <div
+                class="text-xs text-slate-400 dark:text-slate-500 font-medium"
+              >
+                WhatsApp
+              </div>
+              <div
+                class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors"
+              >
+                0838-0502-6759
+              </div>
             </div>
           </a>
 
-          <!-- Email Resmi -->
-          <a href="mailto:mochaprizal1234@gmail.com" class="flex items-center gap-4 p-4 bg-blue-500/5 dark:bg-blue-500/5 border border-blue-500/20 hover:bg-blue-500/20 dark:hover:bg-blue-500/40 rounded-2xl transition duration-300 group min-w-0">
-            <div class="p-3 bg-blue-500 rounded-xl text-white shadow-lg shadow-blue-500/20 flex-shrink-0">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          <a
+            href="mailto:mochaprizal1234@gmail.com"
+            class="flex items-center gap-4 p-4 bg-blue-500/5 dark:bg-blue-500/5 border border-blue-500/20 hover:bg-blue-500/20 dark:hover:bg-blue-500/40 rounded-2xl transition duration-300 group min-w-0"
+          >
+            <div
+              class="p-3 bg-blue-500 rounded-xl text-white shadow-lg shadow-blue-500/20 flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
               </svg>
             </div>
             <div class="min-w-0 flex-1">
-              <div id="contact-email-label" class="text-xs text-slate-400 dark:text-slate-500 font-medium">Email Resmi</div>
-              <div class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors break-all">mochaprizal1234@gmail.com</div>
+              <div
+                id="contact-email-label"
+                class="text-xs text-slate-400 dark:text-slate-500 font-medium"
+              >
+                Email Resmi
+              </div>
+              <div
+                class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors break-all"
+              >
+                mochaprizal1234@gmail.com
+              </div>
             </div>
           </a>
 
-          <!-- GitHub -->
-          <a href="https://github.com" target="_blank" class="flex items-center gap-4 p-4 bg-purple-500/5 dark:bg-purple-500/5 border border-purple-500/20 hover:bg-purple-500/20 dark:hover:bg-purple-500/40 rounded-2xl transition duration-300 group">
-            <div class="p-3 bg-purple-500 rounded-xl text-white shadow-lg shadow-purple-500/20 flex-shrink-0">
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="flex items-center gap-4 p-4 bg-purple-500/5 dark:bg-purple-500/5 border border-purple-500/20 hover:bg-purple-500/20 dark:hover:bg-purple-500/40 rounded-2xl transition duration-300 group"
+          >
+            <div
+              class="p-3 bg-purple-500 rounded-xl text-white shadow-lg shadow-purple-500/20 flex-shrink-0"
+            >
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
               </svg>
             </div>
             <div>
-              <div class="text-xs text-slate-400 dark:text-slate-500 font-medium">Open Source</div>
-              <div class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">GitHub Profil</div>
+              <div
+                class="text-xs text-slate-400 dark:text-slate-500 font-medium"
+              >
+                Open Source
+              </div>
+              <div
+                class="text-sm font-semibold text-slate-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"
+              >
+                GitHub Profil
+              </div>
             </div>
           </a>
         </div>
       </section>
     </main>
 
-    <!-- STRUKTUR KOTAK MODAL POP-UP -->
-    <div id="blog-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0">
-      <div class="bg-white dark:bg-[#0f1626] border border-slate-200 dark:border-slate-800 w-full max-w-2xl rounded-3xl shadow-2xl p-6 sm:p-8 transform scale-95 transition-transform duration-300 flex flex-col max-h-[85vh]">
+    <div
+      id="blog-modal"
+      class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0"
+    >
+      <div
+        class="bg-white dark:bg-[#0f1626] border border-slate-200 dark:border-slate-800 w-full max-w-2xl rounded-3xl shadow-2xl p-6 sm:p-8 transform scale-95 transition-transform duration-300 flex flex-col max-h-[85vh]"
+      >
         <div class="flex justify-between items-start gap-4 mb-4">
           <div>
-            <span id="modal-date" class="text-xs text-slate-400 dark:text-slate-500 font-medium block mb-1">Date</span>
-            <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white leading-tight">Headline</h3>
+            <span
+              id="modal-date"
+              class="text-xs text-slate-400 dark:text-slate-500 font-medium block mb-1"
+              >Date</span
+            >
+            <h3
+              id="modal-title"
+              class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white leading-tight"
+            >
+              Headline
+            </h3>
           </div>
-          <button id="modal-close" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors focus:outline-none">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          <button
+            id="modal-close"
+            class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
           </button>
         </div>
-        <div id="modal-content" class="overflow-y-auto text-slate-600 dark:text-slate-400 font-light leading-relaxed text-sm sm:text-base space-y-4 pr-2">
-        </div>
+        <div
+          id="modal-content"
+          class="overflow-y-auto text-slate-600 dark:text-slate-400 font-light leading-relaxed text-sm sm:text-base space-y-4 pr-2"
+        ></div>
       </div>
     </div>
 
-    <footer class="bg-slate-100 dark:bg-[#070a12] py-8 text-center text-xs text-slate-500 border-t border-slate-200 dark:border-slate-900 transition-colors duration-300">
-      &copy; 2026 Moch. Afrizal. Permanaa. Harun. <span data-lang="footer-rights">Hak Cipta Dilindungi. Built with HTML, CSS, & JS.</span>
+    <footer
+      class="bg-slate-100 dark:bg-[#070a12] py-8 text-center text-xs text-slate-500 border-t border-slate-200 dark:border-slate-900 transition-colors duration-300"
+    >
+      &copy; 2026 Moch. Afrizal. Permanaa. Harun.
+      <span data-lang="footer-rights"
+        >Hak Cipta Dilindungi. Built with HTML, CSS, & JS.</span
+      >
     </footer>
 
     <script src="js/script.js"></script>
